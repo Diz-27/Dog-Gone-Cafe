@@ -2,18 +2,19 @@
 declare(strict_types=1);
 
 class Cafe{
+
     public ?int $customer_id; // this will be null until the product is saved in the database
     public string $first_name;
     public string $last_name;
     public string $email;
     public String $phone;
 
-    // Do I also add the variables for the dog table?
+    
     public ?int $dog_id;
     public string $dog_name;
     public string $breed;
-    public DateTimeInnutable $dob;
-    public DateTimeInnutable $vac_date;
+    public DateTime $dob;
+    public DateTime $vac_date;
 
     public ?int $menu_id;
     public string $item;
@@ -30,8 +31,8 @@ class Cafe{
         ?int $dog_id,
         string $dog_name,
         string $breed,
-        DateTimeInnutable $dob,
-        DateTimeInnutable $vac_date,
+        DateTime $dob,
+        DateTime $vac_date,
         ?int $menu_id,
         string $item,
         string $description,
